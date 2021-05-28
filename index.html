@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <h1 class="header__title" id="title">kevealci´s Survey Form</h1>
+
+        <p class="header__description" id="description">Thank you for taking the time to help us improve the platform</p>
+
+    </header>
+    
+    <main class="main">
+        <form class="form" id="survey-form" action="">
+            <section class="form__section form__section--data-personal">
+
+                <label 
+                    class="form__label" 
+                    for="name" 
+                    id="name-label">
+                    Name
+                </label>
+                <input 
+                    class="form__input" 
+                    id="name" 
+                    type="text" 
+                    required
+                    placeholder="Enter your name"
+                >
+
+                <label 
+                    class="form__label" 
+                    for="email" 
+                    id="email-label">
+                    Email
+                </label>
+                <input 
+                    class="form__input" 
+                    id="email" 
+                    type="email" 
+                    required
+                    placeholder="Enter your email"
+                >
+
+                <label 
+                    class="form__label" 
+                    for="number" 
+                    id="number-label">
+                    Age <span class="form__clue">(optional)</span>
+                </label>
+                <input 
+                    class="form__input" 
+                    id="number" 
+                    type="number" 
+                    min="18" 
+                    max="120"
+                    placeholder="Age"
+                >
+
+            </section>
+
+            <section class="form__section">
+
+                <p class="form__parag">Which option best describes your current role?</p>
+
+                <select id="dropdown" name="role" class="form__select" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                  </select>
+
+            </section>
+
+            <section class="form__section form__section--radio">
+                
+                <p class="form__parag">Would you recommend freeCodeCamp to a friend?</p>
+
+                <div>
+                    <input
+                        name="user-recommend"
+                        id="definitely"
+                        value="definitely"
+                        type="radio"
+                        class="form__radio"
+                        checked
+                    />
+                    <label 
+                    class="form__label"
+                    for="definitely">Definitely</label>
+                </div>
+
+                <div>
+                    <input
+                        name="user-recommend"
+                        id="maybe"
+                        value="maybe"
+                        type="radio"
+                        class="form__radio"   
+                    />
+                    <label 
+                    class="form__label"
+                    for="maybe">Maybe</label>
+                </div>
+                    
+                <div>
+                    <input
+                        name="user-recommend"
+                        id="not-sure"
+                        value="not-sure"
+                        type="radio"
+                        class="form__radio"
+                    />
+                    <label 
+                    class="form__label"
+                    for="not-sure">Not sure</label>
+                </div>
+                
+            </section>
+            
+            <section class="form__section form__section--checkbox">
+
+                <p class="form__parag">What would you like to see improved? <span class="form__clue">(Check all that apply)</span></p>
+
+                <div>
+                    <input
+                    name="prefer"
+                    id="front-end"
+                    value="front-end-projects"
+                    type="checkbox"
+                    class="form__checkbox"
+                    />
+                    <label 
+                    class="form__label"
+                    for="front-end">Front-end Projects</label> 
+                </div>
+
+                <div>
+                    <input
+                        name="prefer"
+                        id="back-end"
+                        value="back-end-projects"
+                        type="checkbox"
+                        class="form__checkbox"
+                    />
+                    <label 
+                    class="form__label"
+                    for="back-end">Back-end Projects</label>
+                </div>
+                
+                <div>
+                    <input
+                    name="prefer"
+                    id="data-visualization"
+                    value="data-visualization"
+                    type="checkbox"
+                    class="form__checkbox"
+                />
+                <label 
+                class="form__label"
+                for="data-visualization">Data Visualization</label>
+                </div>
+
+            </section>
+
+            <section class="form__section">
+
+                <p class="form__parag">Any comments or suggestions?</p>
+
+                <textarea
+                    id="comments"
+                    class="form__textarea"
+                    name="comment"
+                    placeholder="Enter your comment here..."
+                ></textarea>
+
+            </section>
+
+            <section class="form__section">
+                <button type="submit" id="submit" class="form__submit">
+                    Submit
+                  </button>
+            </section>
+
+        </form>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+</body>
+</html>

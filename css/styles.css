@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body, p, h1, h2, h3{
+    margin: 0;
+}
+
+body{
+    max-width: 425px;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        max-width: 720px;
+    }
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+    url(https://i.ibb.co/dg2fcyS/pexels-mentatdgt-1311518.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.header{
+    padding: 0 15px;
+    margin: 70px 0 50px;
+    text-align: center;
+}
+
+.header__title{
+
+    margin: 0 0 10px;
+
+    font-weight: 500;
+    line-height: 3rem;
+    font-size: 3.5rem;
+}
+
+@media screen and (min-width: 425px) {
+    .header__title{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__title{
+        margin-bottom: 30px;
+        font-size: 5.5rem;
+    }
+}
+
+.header__description{
+
+    margin: 0;
+
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 425px) {
+    .header__description{
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header__description{
+        font-size: 3.3rem;
+        line-height: 3.5rem;
+    }
+}
+
+.main{
+    background-color: rgba(27, 27, 50, 0.822);
+    box-shadow: 2px 3px 5px rgba(27, 27, 50, 0.822);
+}
+
+.form{
+    padding: 20px;
+}
+
+.form__section{
+    margin-bottom: 10px;
+}
+
+.form__section--data-personal,
+.form__section--radio,
+.form__section--checkbox{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form__label, .form__parag{
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 425px) {
+    .form__label, .form__parag{
+        font-size: 2.4rem;
+        margin-bottom: 15px;
+    }
+}
+
+.form__clue{
+    font-size: 1.5rem;
+}
+
+.form__input{
+    padding: 5px;
+    margin-bottom: 5px;
+
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+
+    border-radius: 10px;
+
+}
+
+@media screen and (min-width: 425px) {
+    .form__input{
+        font-size: 2.1rem;
+        margin-bottom: 15px;
+    }
+}
+
+.form__select{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+@media screen and (min-width: 425px) {
+    .form__select{
+        font-size: 2.1rem;
+        margin-bottom: 10px;
+    }
+}
+
+.form__radio{
+    margin-right: 10px;
+}
+
+.form__textarea{
+    min-height: 120px;
+    width: 100%;
+    resize: vertical;
+    border-radius: 10px;
+
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 425px) {
+    .form__textarea{
+        border: 1px solid transparent;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .form__textarea:hover, 
+    .form__textarea:focus,
+    .form__input:focus,
+    .form__select{
+        outline: none;
+        cursor: pointer;
+    }
+
+}
+
+.form__submit{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid transparent;
+
+    font-size: 2rem;
+
+    color: #fff;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: rgba(78, 255, 78, 0.692);
+}
+
+@media screen and (min-width: 768px) {
+    .form__submit{
+        font-size: 2.5rem;
+    }
+
+    .form__submit:hover{
+        cursor: pointer;
+    }
+}
